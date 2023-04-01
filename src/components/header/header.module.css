@@ -1,0 +1,10 @@
+.header__container{
+    position: absolute;
+    bottom: 20%;
+    left: 2em;
+    right: 2em;
+    background-color: red;
+    overflow: hidden;
+    transition: width 2s ease;
+}
+

@@ -1,0 +1,15 @@
+.menu__container{
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+.menu__container:hover{
+    background-color: rgb(61, 61, 232);
+}
