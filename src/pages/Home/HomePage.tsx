@@ -19,7 +19,12 @@ const HomePage = ({ menu }: {menu: boolean}) => {
           <div className={styles.gridOne}>
             <h1>Life Insurance Done The Right Way.</h1>
           </div>
-          <div>two</div>
+
+          <div className={styles.gridTwo}>
+            <span className={styles.logo}>Pneuma</span>
+            <img src="" alt="" />
+          </div>
+
           <div>three</div>
 
           <div className={styles.services}>
@@ -27,16 +32,16 @@ const HomePage = ({ menu }: {menu: boolean}) => {
             <div className={styles.servicesCard}>
               <div>
                 <span>&</span>
-                <h3>Living Benefit</h3>
+                <h3>LIfe Insurance with Living Benefit</h3>
               </div>
               <div>
-                <h3>Living Benefit</h3>
+                <h3>LIfe Insurance with Hospital Benefit</h3>
               </div>
               <div>
-                <h3>Living Benefit</h3>
+                <h3>ObamaCare Health Insurance</h3>
               </div>
               <div>
-                <h3>Living Benefit</h3>
+                <h3>Retirement Investment</h3>
               </div>
             </div>
           </div>
