@@ -2,30 +2,23 @@ import React, { useState } from 'react';
 import styles from './HomePage.module.css';
 import { motion } from 'framer-motion';
 
-const variants = {
-  open: {y: -250},
-  closed: {}
-}
-
-const HomePage = ({ menu }: {menu: boolean}) => {
+const HomePage = () => {
   return (
-    <motion.div className={styles.container}>
-      <motion.div 
-        animate={menu ? "open" : "closed"}
-        variants={variants}
-        className={styles.content}
-      >
+    <motion.div 
+      className={styles.container}
+    >
+      <motion.div >
         <div className={styles.grid}>
           <div className={styles.gridOne}>
             <h1>Life Insurance Done The Right Way.</h1>
           </div>
 
           <div className={styles.gridTwo}>
-            <span className={styles.logo}>Pneuma</span>
             <img src="" alt="" />
           </div>
 
-          <div>three</div>
+          <div className=''>three</div>
+          <div className=''>four</div>
 
           <div className={styles.services}>
             <h2>Our Services</h2>
@@ -46,7 +39,6 @@ const HomePage = ({ menu }: {menu: boolean}) => {
             </div>
           </div>
         </div>
-        
       </motion.div>
     </motion.div>
   )

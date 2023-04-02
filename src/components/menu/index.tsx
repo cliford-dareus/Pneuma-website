@@ -21,7 +21,7 @@ const index = ({ menuHandler, menu }: {menuHandler: any, menu: boolean}) => {
       className={`${styles.menu__container}`}
       onClick={()=> menuHandler(!menu)}
     >
-        Menu
+        {menu? 'Close' : 'Menu'}
     </motion.button>
   )
 }

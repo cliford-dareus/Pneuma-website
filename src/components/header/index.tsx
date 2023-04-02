@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import styles from './header.module.css';
 import { motion } from "framer-motion";
 import Card from './Card';
+import { menuData } from '../../utils/data';
+import { ICard } from '../../utils/type';
 
 const variants = {
   open: { y: 0},
@@ -10,8 +12,6 @@ const variants = {
 };
 
 const index = ({ menu }: {menu: boolean}) => {
-  const cards = [1,2,3,4]
-  
   return (
     <motion.nav 
       className={styles.header__container}
@@ -21,9 +21,12 @@ const index = ({ menu }: {menu: boolean}) => {
     >
       <div className={styles.menu__cardholder}>
         <div className={styles.menu__container}>
-          { cards.map((card) => {
+          { menuData.map((card) => {
             return(
-              <Card />
+              <Card 
+                key={card.id}
+                card={card}
+              />
             )
           })}
         </div>
