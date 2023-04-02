@@ -4,7 +4,7 @@ import { easeInOut, motion } from "framer-motion";
 
 const variants = {
   open: { y: -100},
-  closed: { scale: [1, 1.1, 1.1, 1, 1],
+  closed: { scale: [1, 1.05, 1.05, 1, 1],
   transition: {
     repeat: Infinity,
     ease: easeInOut,
@@ -17,7 +17,7 @@ const index = ({ menuHandler, menu }: {menuHandler: any, menu: boolean}) => {
     <motion.button 
       animate={menu ? "open" : "closed"}
       variants={variants}
-      whileHover={{scale: 1}}
+      whileHover={{scale: 1.2}}
       className={`${styles.menu__container}`}
       onClick={()=> menuHandler(!menu)}
     >

@@ -2,13 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './header.module.css';
 import { motion } from "framer-motion";
+import Card from './Card';
 
 const variants = {
-  open: { width: 'auto'},
-  closed: { width: 0},
-}
+  open: { y: 0},
+  closed: { y: 300},
+};
 
 const index = ({ menu }: {menu: boolean}) => {
+  const cards = [1,2,3,4]
   
   return (
     <motion.nav 
@@ -17,9 +19,13 @@ const index = ({ menu }: {menu: boolean}) => {
       transition={{type: 'tween'}}
       variants={variants}
     >
-      <div className=''>
-        <div className=''>
-          <h2 className=''>Home</h2>
+      <div className={styles.menu__cardholder}>
+        <div className={styles.menu__container}>
+          { cards.map((card) => {
+            return(
+              <Card />
+            )
+          })}
         </div>
       </div>
     </motion.nav>
