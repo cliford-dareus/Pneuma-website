@@ -20,20 +20,60 @@
 }
 
 .gridOne h1{
-    font-size: 7rem;
+    font-size: 6.5rem;
     line-height: 1;
 }
 
 .gridTwo{
-    grid-column: 6/7;
+    grid-column: 5/7;
+    height: 400px;
     position: relative;
 }
 
+.gridTwo img{
+    position: absolute;
+    height: 90%;
+    width: 200px;
+    top: 2em;
+    object-fit: cover;
+}
+
+.gridTwo img:nth-of-type(1){
+    left: -6em;
+    transform: rotate(-10deg);
+}
+.gridTwo img:nth-of-type(2){
+    left: -3em;
+    transform: rotate(-8deg);
+}
+
+.gridTwo img:nth-of-type(3){
+    right: 4em;
+    transform: rotate(8deg);
+}
+
+.gridTwo img:nth-of-type(4){
+    right: 7em;
+    transform: rotate(10deg);
+}
+
+.gridThree{
+    padding: 2em;
+    grid-column: 1 / 4;
+    height: 100%;
+    /* border: 1px solid whitesmoke; */
+}
+
+.gridFour{
+    /* background-color: red; */
+    padding: 2em;
+}
+
 .services{
-    grid-column: 4 / 7;
-    padding:3em;
+    grid-column: 5 / 7;
+    padding:2em;
     /* text-align: right; */
-    height: 50%;
+    height: 350px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -41,7 +81,7 @@
     align-items: end;
 }
 
-.services h2{
+.gridFour h2{
     font-size: 4rem;
 }
 
@@ -52,18 +92,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: end;
-    margin-top: 4em;
+    /* margin-top: 4em; */
 }
 
 .servicesCard div{
     display: flex;
+    width: 100%;
     gap: 2em;
+    justify-content: space-between;
     margin-top: 1em;
     /* font-size: 1.7rem; */
     transition: all 1s ease-in-out;
     padding: .5em;
     margin-left: 5em;
     cursor: pointer;
+    border-bottom-left-radius: .5em;
+}
+
+.servicesCard div span{
+    font-size: 1.5rem;
 }
 
 .servicesCard div:hover{

@@ -1,0 +1,24 @@
+.container{
+    width: 100%;
+    height: 100%;
+    margin-top: 1em;
+}
+
+.slider{
+    display: flex;
+    height: 100%;
+    gap: .3em;
+}
+
+.slide{
+    background-color: black;
+    width: 1em;
+    border-radius: .3em;
+}
+
+.active{
+    width: 15em;
+    background-color: aqua;
+    font-size: 2rem;
+    /* padding: 1em; */
+}
