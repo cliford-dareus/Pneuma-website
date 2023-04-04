@@ -67,10 +67,23 @@
 }
 
 .gridFour{
-    /* background-color: red; */
+    position: relative;
     padding: 1em;
 }
 
+.gridFour div{
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: .3em;
+    position: absolute;
+    height: 90%;
+    background: linear-gradient(rgb(0, 255, 213), blue);
+}
+
+.gridFour h2{
+    font-size: 3.5rem;
+}
 .services{
     grid-column: 5 / 7;
     padding:2em;
@@ -83,9 +96,7 @@
     
 }
 
-.gridFour h2{
-    font-size: 4rem;
-}
+
 
 .servicesCard{
     width: 100%;

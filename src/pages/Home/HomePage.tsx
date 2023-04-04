@@ -32,6 +32,7 @@ const HomePage = () => {
 
           <div className={styles.gridFour}>
             <h2>Our Services</h2>
+            <div></div>
           </div>
         
           <div className={styles.services}>
