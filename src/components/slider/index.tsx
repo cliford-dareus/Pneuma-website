@@ -12,20 +12,21 @@ const index = () => {
       }
     }
   
-    React.useEffect(() => {
+    useEffect(() => {
       resetTimeout();
       timeoutRef.current = setTimeout(
         () =>
           setIndex((prevIndex) =>
             prevIndex === slide.length - 1 ? 0 : prevIndex + 1
           ),
-        5000
+        10000
       );
   
       return () => {
         resetTimeout();
       };
     }, [Index]);
+
   return (
     <div className={styles.container}>
         <div className={styles.slider}>

@@ -10,7 +10,10 @@ const variants = {
 
 const index = ({menu}: {menu: boolean}) => {
   return (
-    <motion.div className={styles.container}>
+    <motion.div 
+        className={styles.container}
+        
+    >
         <motion.div 
             className={styles.content}
             animate={menu ? "open" : "closed"}

@@ -3,8 +3,8 @@ import styles from './menu.module.css';
 import { easeInOut, motion } from "framer-motion";
 
 const variants = {
-  open: { y: -100},
-  closed: { scale: [1, 1.05, 1.05, 1, 1],
+  open: {y: -150},
+  closed: {scale: [1, 1.05, 1.05, 1, 1],
   transition: {
     repeat: Infinity,
     ease: easeInOut,

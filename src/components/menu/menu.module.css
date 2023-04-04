@@ -1,13 +1,14 @@
 .menu__container{
     position: absolute;
-    bottom: 10%;
-    left: 50%;
+    bottom: 8%;
+    left: 47%;
     transform: translateX(-50%);
     width: 7em;
     height: 7em;
     border-radius: 50%;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 .menu__container:hover{

@@ -17,11 +17,13 @@
     display: flex;
     align-items: center;
     padding: 2em;
+    padding-right: 5em;
 }
 
 .gridOne h1{
-    font-size: 6.5rem;
+    font-size: 6rem;
     line-height: 1;
+    margin-top: 1em;
 }
 
 .gridTwo{
@@ -66,19 +68,19 @@
 
 .gridFour{
     /* background-color: red; */
-    padding: 2em;
+    padding: 1em;
 }
 
 .services{
     grid-column: 5 / 7;
     padding:2em;
-    /* text-align: right; */
-    height: 350px;
+    height: 330px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: end;
+    
 }
 
 .gridFour h2{
