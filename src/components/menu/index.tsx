@@ -20,6 +20,7 @@ const index = ({ menuHandler, menu }: {menuHandler: any, menu: boolean}) => {
       whileHover={{scale: 1.2}}
       className={`${styles.menu__container}`}
       onClick={()=> menuHandler(!menu)}
+      data-button = 'Menu'
     >
         {menu? 'Close' : 'Menu'}
     </motion.button>

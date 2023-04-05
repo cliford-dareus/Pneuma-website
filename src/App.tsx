@@ -11,12 +11,17 @@ import Cursor from './components/cursor';
 import { ICoord } from './utils/type';
 
 function App() {
-  const [ mouseLocation, setMouseLocation ] = useState<ICoord>({x: 0, y: 0})
+  const [ dataset, setDataSet ] = useState<string | unknown>('');
+  const [ mouseLocation, setMouseLocation ] = useState<ICoord>({x: 0, y: 0});
   const [ menuOpen, setMenuOpen ] = useState<boolean>(false);
   const location = useLocation();
 
   useEffect(()=>{
-    const getMousePosition = (e: MouseEvent) => {
+    const getMousePosition = (e: any) => {
+      const str = Object.values(e.target.dataset)[0]
+      setDataSet(str);
+
+
       setMouseLocation({
         x: e.clientX,
         y: e.clientY
@@ -32,18 +37,18 @@ function App() {
 
   return (
     <div className="App">
-      <AnimatePresence mode='wait' initial={false}>
+      <AnimatePresence mode='wait' >
         <Routes location={location} key={location.pathname} >
           <Route element={<Layout menu={menuOpen}/>}>
             <Route path='/'  element={<HomePage />}/>
             <Route path='/about' element={<AboutUsPage />}/>
           </Route>
         </Routes>
+      </AnimatePresence>
 
         <Header menu={menuOpen}/>
         <Menu menuHandler={setMenuOpen} menu={menuOpen}/>
-        <Cursor pos={mouseLocation}/>
-      </AnimatePresence>
+        <Cursor pos={mouseLocation} data={dataset}/>
     </div>
   )
 }

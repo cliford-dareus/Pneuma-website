@@ -3,7 +3,7 @@ import styles from './cursor.module.css';
 import { ICoord } from '../../utils/type';
 import { motion } from 'framer-motion';
 
-const index = ({ pos }: {pos: ICoord}) => {
+const index = ({ pos, data }: {pos: ICoord, data: string}) => {
 
   const variants = {
     default: {
@@ -17,7 +17,11 @@ const index = ({ pos }: {pos: ICoord}) => {
       variants={variants}
       className={styles.cursor}
       animate='default'
-    ></motion.div>
+    >
+      { data !== 'undefined'?
+        <p>{data}</p>:''
+      }
+    </motion.div>
   )
 }
 

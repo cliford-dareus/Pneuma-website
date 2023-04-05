@@ -19,7 +19,10 @@ const index = ({menu}: {menu: boolean}) => {
             animate={menu ? "open" : "closed"}
             variants={variants}
         >
-            <div className={styles.logo}>
+            <div 
+                className={styles.logo}
+                data-logo='Pneuma'
+            >
                 <span>Pneuma</span> 
             </div>
             <Outlet />
