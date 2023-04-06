@@ -7,19 +7,65 @@
 .slider{
     display: flex;
     height: 100%;
-    gap: .3em;
+    gap: .5em;
 }
 
 .slide{
+    position: relative;
+    isolation: isolate;
     background-color: black;
-    width: 1em;
+    width: 2em;
     border-radius: .3em;
     transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+    overflow: hidden;
 }
 
+.slide__img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.slide__icon{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: .5em;
+    
+    background-color: transparent;
+}
+
+.slide__icon p {
+    display: none;
+}
+
+
 .active{
-    width: 15em;
+    width: 13em;
     background-color: aqua;
     font-size: 2rem;
     /* padding: 1em; */
+}
+
+.active .slide__icon{
+    font-size: 1.6rem;
+    background-color: hsla(0, 0%, 0%, .4);
+}
+
+.active .slide__icon p{
+    display: block;
+}
+
+.icons:nth-of-type(3){
+    color: red;
 }

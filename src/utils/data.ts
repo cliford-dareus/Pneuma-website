@@ -1,5 +1,8 @@
 import { BsHospital } from 'react-icons/bs';
 import { FaUmbrellaBeach, FaStethoscope, FaHandHoldingHeart } from 'react-icons/fa';
+import obamaCare from '../assets/obamacare-logo.jpg';
+import retirement from '../assets/retirement-wishes-feat.jpg';
+import living from '../assets/Playful-family.jpg';
 
 export const menuData = [
     {
@@ -53,4 +56,35 @@ export const services =[
         data: 'Retirement',
         icon: FaUmbrellaBeach
     }
+];
+
+export const slide = [
+    {
+        id: 1,
+        title: 'ObamaCare Health Insurance',
+        image: obamaCare,
+        icon: FaStethoscope,
+        data: 'ObamaCare Health Insurance'
+    },
+    {
+        id: 1,
+        title: 'Retirement Investment',
+        image: retirement,
+        icon: FaUmbrellaBeach,
+        data: 'Retirement Investement'
+    },
+    {
+        id: 1,
+        title: 'Life Insurance with Living Benefit',
+        image: living,
+        icon: FaHandHoldingHeart,
+        data: 'Living Benefit'
+    },
+    {
+        id: 1,
+        title: 'ObamaCare Health Insurance',
+        image: obamaCare,
+        icon: BsHospital,
+        data: 'Hospital Benefit'
+    },
 ];

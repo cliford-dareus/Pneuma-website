@@ -6,9 +6,6 @@ import { services } from '../../utils/data';
 import taxImage from '../../assets/taxImage.jpg';
 import insIMage from '../../assets/pexels-mikhail-nilov-7735637.jpg';
 
-import { BsHospital } from 'react-icons/bs';
-import { FaUmbrellaBeach, FaStethoscope, FaHandHoldingHeart } from 'react-icons/fa';
-
 const HomePage = () => {
   return (
     <motion.div 
