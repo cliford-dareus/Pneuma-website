@@ -133,3 +133,9 @@
     font-size: 6vw;
     width: 40%;
 }
+
+.new{
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+}

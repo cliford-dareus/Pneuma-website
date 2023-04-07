@@ -18,11 +18,8 @@ const HomePage = () => {
           </div>
 
           <div className={styles.gridTwo}>
-            <img src={insIMage} alt="" />
-            <img src={taxImage} alt="" />
-            <img src={taxImage} alt="" />
-            <img src={taxImage} alt="" />
-            <img src={taxImage} alt="" />
+            <div className=''>
+            </div>
           </div>
 
           <div className={styles.gridThree}>

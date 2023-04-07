@@ -25,7 +25,9 @@ const index = ({menu}: {menu: boolean}) => {
             >
                 <span>Pneuma</span> 
             </div>
+
             <Outlet />
+            
         </motion.div>
     </motion.div>
   )
